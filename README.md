@@ -117,13 +117,10 @@
             titleText.setText(title);
             image.setImageResource(R.mipmap.ic_launcher);
         }
-    }
-}
+    }}
 
 > 细节注意：
 > 
 > 必须继承BaseDynamicGridAdapter。
 
-欢迎关注微信公众号
 
-![](http://upload-images.jianshu.io/upload_images/4037105-54ace4e4cb94c547.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
