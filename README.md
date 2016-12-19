@@ -1,5 +1,5 @@
 # 最火Android开源项目DynamicGridView使用
----
+
 开源项目地址:[https://github.com/open-android/DynamicGridView](https://github.com/open-android/DynamicGridView)
 
 # 运行效果
@@ -86,22 +86,22 @@
 ### 5. 复制如下代码到Adapter
 
     public class CheeseDynamicAdapter extends BaseDynamicGridAdapter {
-    public CheeseDynamicAdapter(Context context, List<?> items, int columnCount) {
-        super(context, items, columnCount);
-    }
+	    public CheeseDynamicAdapter(Context context, List<?> items, int columnCount) {
+		super(context, items, columnCount);
+	    }
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        CheeseViewHolder holder;
-        if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_grid, null);
-            holder = new CheeseViewHolder(convertView);
-            convertView.setTag(holder);
-        } else {
-            holder = (CheeseViewHolder) convertView.getTag();
-        }
-        holder.build(getItem(position).toString());
-        return convertView;
+	    @Override
+	    public View getView(int position, View convertView, ViewGroup parent) {
+		CheeseViewHolder holder;
+		if (convertView == null) {
+		    convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_grid, null);
+		    holder = new CheeseViewHolder(convertView);
+		    convertView.setTag(holder);
+		} else {
+		    holder = (CheeseViewHolder) convertView.getTag();
+		}
+		holder.build(getItem(position).toString());
+		return convertView;
     }
 
     private class CheeseViewHolder {
@@ -126,4 +126,4 @@
 
 欢迎关注微信公众号
 
-![](http://oi5nqn6ce.bkt.clouddn.com/itheima/booster/code/qrcode.png)
+![](http://upload-images.jianshu.io/upload_images/4037105-54ace4e4cb94c547.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
